@@ -1,5 +1,7 @@
 :start
 cls
+
+: This is where you select the task/utility :
 echo Select a utility to execute:
 echo 1. IP Configuration (ipconfig)
 echo 2. Task List and Kill Processes (tasklist/taskkill)
@@ -11,6 +13,8 @@ echo 7. Change File Attributes (attrib)
 echo 8. Exit
 echo.
 
+
+: This is where it validates your input to push through the correct utility:
 set /P Choice=Enter your input [1-8]: 
 if "%Choice%"=="1" goto ipconfig
 if "%Choice%"=="2" goto viewtasks
@@ -24,6 +28,8 @@ if "%Choice%"=="8" goto exit
 echo Invalid choice
 pause
 goto start
+
+: Below are all the processes this current batch file can process as of the moment:
 
 :ipconfig
 ipconfig /all

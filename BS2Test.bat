@@ -95,3 +95,8 @@ echo Exiting...
 timeout /t 10 >nul
 exit
 
+
+
+
+: Evening To Whoever Sees This :
+: May you have a wonderful day:
